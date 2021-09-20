@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.example.caner.advancedcalculator.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/lbIslem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" İŞLEM GİRİNİZ"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/edtInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="3+8*((2-9/3+5)-((12+2)/2)*3)+5" />
+
+        <Button
+            android:id="@+id/btnHesapla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray"
+            android:text="HESAPLA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lbSonuc"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:text="SONUÇ"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtSonuc"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/lbİnfix"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:text="INFIX"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtInfix"
+                android:layout_width="226dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.40"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="127dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/lbPostfix"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:text="POSTFIX"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtPostfix"
+                android:layout_width="236dp"
+                android:layout_height="match_parent"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
